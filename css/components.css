@@ -1,0 +1,116 @@
+.header{
+    border: 0px solid black;
+    background-color: rgb(72, 170, 93);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    margin: auto;
+} 
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+}
+.boton_busqueda{
+    padding: 1rem;
+    border: 2px solid transparent;
+    border-radius: 60px;
+    outline: none;
+    background-color: rgb(230, 250, 220)
+}
+.logo{
+    height: auto;
+    display: block;
+}
+.boton_inicio{
+    width: 80px;
+    height: 50px;
+    background: bisque;
+    border: 1;
+    border-radius: 60px;
+}
+.img_tm{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+.contenedor-flex-izquierda {
+    display: flex;
+    align-items: center;
+    gap: 5%;   
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 90%;       
+    max-width: 1200px;    
+  }
+.imagen-izquierda {
+    width: 45%;
+    height: auto;
+    border-radius: 30px;
+}
+.contenedor-flex-derecha{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 5%;
+    margin-top: 50px;
+    margin-left: 90px;
+    margin-right: 50px;
+    width: 85%;
+    max-width: 1200px;
+} 
+.texto-derecha{
+    width: 50%;
+
+}
+.texto-izquierda{
+    width: 50%;
+}
+@media (max-width: 768px) {
+    .navbar{
+        flex-wrap: wrap;
+        padding: 15px 20px;
+        gap: 15px;
+    }
+    .logo{
+        display: flex;
+        width: auto;
+        order: 1;    
+        max-height: 50px;
+    }
+    .boton_busqueda{
+        display: flex;
+        width: 50px;
+        order: 2;
+        flex-grow: 1;
+    }
+    .navbar ul {
+        order: 3;
+        width: 100%; 
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        padding: 0;
+    }
+    .boton_inicio{
+        display: inline-block;
+        text-align: center;
+        width: 70px;
+        height: 45px;
+        font-size: 14px;
+    }
+    .contenedor-flex-izquierda{
+        flex-direction: column;
+        width: 90%;
+        margin: 30px auto;
+        gap: 20px;
+    }
+    .contenedor-flex-derecha {
+        flex-direction: column; 
+        width: 90%;
+        margin: 30px auto;
+        gap: 20px;
+    }
+}
