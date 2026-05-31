@@ -4,7 +4,6 @@
     position: sticky;
     top: 0;
     width: 100%;
-    margin: auto;
     z-index: 1000;
 } 
 .navbar{
@@ -35,8 +34,7 @@
     border-radius: 30px;       
     text-decoration: none;    
     color: black;        
-    font-family: sans-serif;
-    background: bisque;  
+    font-family: sans-serif;  
 }
 .img_tm{
     width: 100%;
@@ -68,7 +66,7 @@
     margin-left: 90px;
     margin-right: 50px;
     margin-bottom: 50px;
-    width: 85%;
+    width: 90%;
     max-width: 1200px;
 } 
 .texto-derecha{
@@ -76,12 +74,18 @@
     background: bisque;
     border: 1px solid #171616;
     border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-sizing: border-box;
 }
 .texto-izquierda{
     width: 50%;
     background: bisque;
     border: 1px solid #171616;
     border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-sizing: border-box;
 }
 .abajo-pagina {
     background-color: rgb(72, 170, 93);
@@ -227,9 +231,11 @@
         padding: 0;
     }
     .boton_inicio{
-        display: inline-block;
+        display: inline-flex;
         text-align: center;
-        width: 70px;
+        justify-content: center;
+        align-items: center;
+        width: 75px;
         height: 45px;
         font-size: 14px;
     }
@@ -244,5 +250,12 @@
         width: 90%;
         margin: 30px auto;
         gap: 20px;
+    }
+    .texto-derecha, .texto-izquierda {
+        width: 100%;
+    }
+    .contenedor-productos-fila {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
