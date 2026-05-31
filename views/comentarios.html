@@ -26,5 +26,50 @@
             </nav>
         </div>
     </header>
+    <section>
+            <h2 class="centrar-texto-con-bordes">Comentanos tus ideas</h2>
+            <p class="centrar-texto-con-bordes">Comparte tus sugerencias y comentarios sobre nuestros productos y servicios.</p>
+
+            <form action="#" method="post">
+                <p>
+                    <label for="nombre">Nombre completo:</label><br>
+                    <input class="redondear" type="text" id="nombre" name="nombre" placeholder="Ejemplo: Ana Pérez" required>
+                </p>
+
+                <p>
+                    <label for="correo">Correo electrónico:</label><br>
+                    <input class="redondear" type="email" id="correo" name="correo" placeholder="nombre@correo.com" required>
+                </p>
+
+                <p>
+                    <label for="telefono">Teléfono:</label><br>
+                    <input class="redondear" type="tel" id="telefono" name="telefono" placeholder="3001234567">
+                </p>
+                
+                <p>
+                    <label for="comentarios">Comentarios:</label><br>
+                    <textarea class="redondear" id="comentarios" name="comentarios" rows="5" cols="40" placeholder="Cuéntanos qué esperas que mejoremos..."></textarea>
+                </p>
+
+                <input type="hidden" name="origen" value="sesion-html-2">
+
+                <p>
+                    <a href="../index.html" class="boton_inicio">Enviar</a>
+                    <a href="../views/comentarios.html" class="boton_inicio">Resetear</a>
+                </p>
+            </form>
+        </section>
+        <footer id="abajo-pagina" class="abajo-pagina" >
+        <div class="contenedor-footer">
+            <h3 class="centrar-texto">CONTACTANOS</h3>
+            <p class="centrar-texto">Conose mas de nosotros en nuestras redes sociales</p>
+        
+            <div class="redes-sociales">
+                <a class="alinear_al_centro" href="https://www.facebook.com/ecomarketsaludable" target="_blank" rel="noopener">Facebook</a>
+                <a class="alinear_al_centro" href="https://www.instagram.com/ecomarketsaludable/" target="_blank" rel="noopener">Instagram</a>
+                <a class="alinear_al_centro" href="https://www.tiktok.com/@ecomarket.official" target="_blank" rel="noopener">TikTok</a>
+            </div>
+        </div>
+        </footer>
 </body>
 </html>

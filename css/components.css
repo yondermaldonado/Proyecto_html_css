@@ -73,10 +73,15 @@
 } 
 .texto-derecha{
     width: 50%;
-
+    background: bisque;
+    border: 1px solid #171616;
+    border-radius: 10px;
 }
 .texto-izquierda{
     width: 50%;
+    background: bisque;
+    border: 1px solid #171616;
+    border-radius: 10px;
 }
 .abajo-pagina {
     background-color: rgb(72, 170, 93);
@@ -176,7 +181,25 @@
     font-size: 18px;    
     color: #111111;
 }
-
+.centrar-texto {
+    text-align: center;
+}
+.centrar-texto-con-bordes {
+    text-align: center;
+    border: 1px solid #171616;
+    border-radius: 10px;
+    background: bisque;
+    padding: 10px;
+    
+}
+.alinear_al_centro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.redondear{
+    border-radius: 4px;
+}
 @media (max-width: 768px) {
     .navbar{
         flex-wrap: wrap;
