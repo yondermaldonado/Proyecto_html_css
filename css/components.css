@@ -231,6 +231,11 @@
     text-align: center;
     box-sizing: border-box;
 }
+.contacto{
+    object-fit: cover;
+    width: 80px;
+    height: 50px;
+}
 @media (max-width: 768px) {
     .navbar{
         flex-wrap: wrap;
