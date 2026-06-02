@@ -13,11 +13,3 @@ body {
 main {
     flex: 1; 
 }
-form{
-    background-color: #62ca5c;   
-    max-width: 550px;       
-    margin: 30px auto;         
-    padding: 30px;          
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-}
