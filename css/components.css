@@ -11,6 +11,9 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px 40px;
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: center; 
 }
 .boton_busqueda{
     padding: 1rem;
@@ -250,7 +253,140 @@
     width: 70px;
     height: 50px;
 }
+.range{
+    accent-color: green;
+    width: 70%;
+}
+.calculadora-contenedor {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 50px;
+    background: bisque;
+    border: 1px solid #dddddd;
+    border-radius: 20px;
+    font-family: sans-serif;
+}
+.secciones{
+    border: 1px ;
+}
+.campo {
+    margin-bottom: 15px;
+}
+.letra{
+    font-weight: bold;
+}
+.campo label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.campo input, 
+.campo select {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #1d7008;
+    border-radius: 10px;
+    box-sizing: border-box; 
+}
+#activar-calculo {
+    display: none;
+}
+
+.separar{
+    width: 80%;
+    margin: 10px 40px;
+    border: 2px solid green;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.boton-calcular {
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 12px;
+    background-color: #2e7d32;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.boton-calcular:hover {
+    background-color: #1b5e20;
+}
+
+
+.seccion-resultado {
+    display: none;
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #e8f5e9;
+    border-left: 5px solid #2e7d32;
+    border-radius: 4px;
+}
+#activar-calculo:checked ~ .seccion-resultado {
+    display: block;
+}
+
+.radio-group {
+    display: flex;
+    gap: 15px;
+    font-family: sans-serif;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+  
+
+.radio-group input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: auto;
+    height: auto;
+    align-items: center;
+}
+  
+.radio-group label {
+    display: inline-block;
+    align-items: center;
+    padding: 10px 10px;
+    background-color: #f0f0f0;
+    color: #333;
+    border: 0px solid #ccc;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+}
+  
+.letrap{
+    font-weight: bold;
+}
+.radio-group input[type="radio"]:checked + label {
+    background-color: #18752c;
+    color: white;
+    border-color: #0056b3;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+  }
 @media (max-width: 768px) {
+    
+    .calculadora-contenedor {
+        max-width: 500px;
+        margin: 40px auto;
+        padding: 50px;
+        background: bisque;
+        border: 1px solid #dddddd;
+        border-radius: 20px;
+        font-family: sans-serif;
+    }
+    .separar{
+        width: 80%;
+        margin: 40px 10px;
+        border: 2px solid green;
+        border-radius: 10px;
+        padding: 20px;
+    }
     .navbar{
         flex-wrap: wrap;
         padding: 15px 20px;
@@ -261,6 +397,10 @@
         width: auto;
         order: 1;    
         max-height: 50px;
+    }
+    .secciones{
+        flex-wrap: wrap;
+        justify-content: center;
     }
     .boton_busqueda{
         display: flex;
@@ -275,6 +415,8 @@
         justify-content: space-around;
         list-style: none;
         padding: 0;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     .boton_inicio{
         display: inline-flex;

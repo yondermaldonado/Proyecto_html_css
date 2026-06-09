@@ -29,35 +29,51 @@
         </div>
     </header>
     <section class="formulario entrada-izquierda">
-            <h2 class="centrar-for">Comentanos tus ideas</h2>
-            <div class="centrar-for">
-                <form action="#" method="post">
-                    <p>
-                        <label for="nombre">Nombre completo:</label><br>
-                        <input class="boton_for" type="text" id="nombre" name="nombre" placeholder="Ejemplo: Ana Pérez" required>
-                    </p>
+            <h2 class="centrar-for">Calculadora De Carbono</h2>
+            <div class="calculadora-contenedor letra">
+               
+                    <div class="separar">    
+                        <h2>Hogar🏠</h2>
+                        <p class="sectiones">
+                            <label for="nombre">Consumo de energía mensual (kWh):</label><br></blockquote>
+                            <input  class="range letrap" type="range" id="energia"><br>0 100 200 300 400 500 600 800
+                        </p>
+                    </div>
+                    <div class="separar">
+                        <h2>Transporte 🚗 </h2>  
+                        <p>¿cual es su medio de transporte principal?</p>  
+                        <div class="radio-group ">
+                            <input type="radio" id="opcion1" name="suscripcion" value="1" checked>
+                            <label  for="opcion1">Automóvil Familiar</label>
+                        
+                            <input type="radio" id="opcion2" name="suscripcion" value="2">
+                            <label for="opcion2">Motocicleta</label>
+                        
+                            <input type="radio" id="opcion3" name="suscripcion" value="3">
+                            <label for="opcion3">Autobús / Metro</label>
+                            <input type="radio" id="opcion4" name="suscripcion" value="4">
+                            <label for="opcion4">Bicicleta / Caminar</label>
+                        </div><br>
+                        <div class="campo">
+                            <label for="km">Kilómetros recorridos al mes:</label>
+                            <input type="number" id="km" placeholder="Ej. 300">
+                        </div>
 
-                    <p>
-                        <label for="correo">Correo electrónico:</label><br>
-                        <input class="boton_for" type="email" id="correo" name="correo" placeholder="nombre@correo.com" required>
-                    </p>
-
-                    <p>
-                        <label for="telefono">Teléfono:</label><br>
-                        <input class="boton_for" type="tel" id="telefono" name="telefono" placeholder="3001234567">
-                    </p>
-
-                    <p>
-                        <label for="comentarios">Comentarios:</label><br>
-                        <textarea class="boton_for" id="comentarios" name="comentarios" rows="5" cols="40" placeholder="Cuéntanos qué esperas que mejoremos..."></textarea>
-                    </p>
-
-                    <input type="hidden" name="origen" value="sesion-html-2">
-
-                    <p>
-                        <a href="../index.html" class="boton_inicio">Enviar</a>
-                        <a href="../views/comentarios.html" class="boton_inicio">Resetear</a>
-                    </p>
+                    </div>
+                        
+                
+            
+                <input type="checkbox" id="activar-calculo">
+                <label for="activar-calculo" class="boton-calcular">Calcular Impacto Total</label>
+            
+                <div class="seccion-resultado">
+                    <h3>📊 Resultado Estimado</h3>
+                        <p>Basado en tus datos, tu huella de carbono promedio es de:</p>
+                        <p class="resultado-numero">
+                            215 kg de CO2 al mes
+                        </p>
+                    </div>
+        </div>
                 </form>
             </div>
     </section>
